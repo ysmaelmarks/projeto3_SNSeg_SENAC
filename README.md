@@ -3,9 +3,10 @@ Este projeto visa analisar dados de produtividade de uma equipe, realizando cál
 
 # Tecnologias Utilizadas
 Python
-pandas
-numpy
-matplotlib
+Pandas
+Numpy
+Matplotlib
+Google Colab
 
 # Instalação
 Para rodar este projeto, você precisará ter o Python instalado em sua máquina, além das bibliotecas pandas, numpy e matplotlib. Você pode instalá-las utilizando pip:
@@ -16,7 +17,8 @@ $ pip install pandas numpy matplotlib
 
 # Como Executar
 Clone o repositório para sua máquina local.
-Execute o script principal para gerar os cálculos e gráficos.
+Abra o arquivo .ipynb no Google Colab ou em seu Jupyter Notebook.
+Execute o notebook para gerar os cálculos e gráficos.
 
 # Código
 
@@ -55,6 +57,57 @@ print(f'Média diária de: {mediaTarefasConcluidas:.1f} tarefas concluídas')
 produtividade = tarefasConcluidas / horasTrabalhadas
 print(f'Produtividade diária de: {produtividade:.1f} tarefas concluídas por hora')
 
+```
+
+# Códigos dos Gráficos
+
+# Horas Trabalhadas
+
+```sh
+plt.figure(figsize=(10, 6))
+plt.plot(df.index, df['Horas Trabalhadas'], marker='o')
+plt.title('Horas Trabalhadas')
+plt.xlabel('Índice')
+plt.ylabel('Horas Trabalhadas')
+plt.grid(True)
+plt.show()
+```
+
+# Bugs Corrigidos
+
+```sh
+plt.figure(figsize=(10, 6))
+plt.plot(df.index, df['Horas Trabalhadas'], marker='o')
+plt.title('Horas Trabalhadas')
+plt.xlabel('Índice')
+plt.ylabel('Horas Trabalhadas')
+plt.grid(True)
+plt.show()
+```
+
+# Gráfico de Tarefas Concluídas
+
+```sh
+plt.figure(figsize=(10, 6))
+plt.plot(df.index, df['Tarefas Concluídas'], marker='s', color='g')
+plt.title('Tarefas Concluídas')
+plt.xlabel('Índice')
+plt.ylabel('Tarefas Concluídas')
+plt.grid(True)
+plt.show()
+```
+
+# Gráfico de Produtividade Diária
+
+```sh
+df['Produtividade'] = df['Tarefas Concluídas'] / df['Horas Trabalhadas']
+plt.figure(figsize=(10, 6))
+plt.plot(df.index, df['Produtividade'], marker='d', color='m')
+plt.title('Produtividade Diária')
+plt.xlabel('Índice')
+plt.ylabel('Tarefas Concluídas por Hora')
+plt.grid(True)
+plt.show()
 ```
 
 # Contribuições
