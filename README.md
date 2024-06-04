@@ -2,11 +2,11 @@
 Este projeto visa analisar dados de produtividade de uma equipe, realizando cálculos e gerando gráficos que auxiliam na visualização do desempenho em termos de horas trabalhadas, bugs corrigidos, tarefas concluídas e produtividade diária.
 
 # Tecnologias Utilizadas
-Python
-Pandas
-Numpy
-Matplotlib
-Google Colab
+Python  
+Pandas  
+Numpy  
+Matplotlib  
+Google Colab  
 
 # Instalação
 Para rodar este projeto, você precisará ter o Python instalado em sua máquina, além das bibliotecas pandas, numpy e matplotlib. Você pode instalá-las utilizando pip:
