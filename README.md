@@ -61,7 +61,7 @@ print(f'Produtividade diária de: {produtividade:.1f} tarefas concluídas por ho
 
 # Códigos dos Gráficos
 
-# Horas Trabalhadas
+## Horas Trabalhadas
 
 ```sh
 plt.figure(figsize=(10, 6))
@@ -73,7 +73,7 @@ plt.grid(True)
 plt.show()
 ```
 
-# Bugs Corrigidos
+## Bugs Corrigidos
 
 ```sh
 plt.figure(figsize=(10, 6))
@@ -85,7 +85,7 @@ plt.grid(True)
 plt.show()
 ```
 
-# Gráfico de Tarefas Concluídas
+## Gráfico de Tarefas Concluídas
 
 ```sh
 plt.figure(figsize=(10, 6))
@@ -97,7 +97,7 @@ plt.grid(True)
 plt.show()
 ```
 
-# Gráfico de Produtividade Diária
+## Gráfico de Produtividade Diária
 
 ```sh
 df['Produtividade'] = df['Tarefas Concluídas'] / df['Horas Trabalhadas']
